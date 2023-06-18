@@ -1,0 +1,23 @@
+{
+  "name": "gamerank",
+  "version": "1.0.0",
+  "description": "application to generate game reviews using chatgpt and save them in mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch": "node ./src/jobs/fetch.mjs",
+    "normalize": "node ./src/jobs/normalize.mjs",
+    "tags": "node ./src/jobs/tags.mjs",
+    "genre": "node ./src/jobs/genre.mjs", 
+    "igdb": "node ./src/jobs/igdb.mjs", 
+    "review": "node ./src/jobs/review.mjs"
+  },
+  "author": "horstjahns@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chatgpt": "^4.7.2",
+    "dotenv": "^16.0.3",
+    "mongodb": "^5.1.0",
+    "node-fetch": "^3.3.1"
+  }
+}
